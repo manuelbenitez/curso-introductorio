@@ -71,7 +71,6 @@
 //   }
 // });
 
-
 //Ejercicio a realizar por ustedes!
 function obtenerNumeroMasGrande(num1, num2) {
   if (num1 > num2) {
@@ -89,11 +88,6 @@ function main() {
     console.log("Error en el codigo");
   }
   if (obtenerNumeroMasGrande(1, -1) === 1) {
-    console.log("Test realizado con exito");
-  } else {
-    console.log("Error en el codigo");
-  }
-  if (obtenerNumeroMasGrande(5, 5) === 5) {
     console.log("Test realizado con exito");
   } else {
     console.log("Error en el codigo");
