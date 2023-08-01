@@ -1,3 +1,7 @@
 function printName() {
-  console.log("Manuel");
+  axios.get("https://mi-base-de-datos.com", {
+    autorizacion: process.env.USUARIO_DB,
+  });
 }
+
+() => {};
