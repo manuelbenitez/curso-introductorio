@@ -32,3 +32,5 @@ function refactorCarsObject(cars) {
 
   return formattedArray;
 }
+
+const nombre = "";
