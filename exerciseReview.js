@@ -109,49 +109,49 @@ main();
 //   }
 // });
 
-// console.log(arrayDeResultados);
-// // Dado que mi funcion retorna un array
+console.log(arrayDeResultados);
+// Dado que mi funcion retorna un array
 // Tengo que guardar el valor retornado en una constante para luego imprimirlo
-// refactorCars(carsArray, imprimir);
+refactorCars(carsArray, imprimir);
 
-// const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-// const autoNumbers = (i, max) => {
-//   const newArray = [];
-//   for (i; i < max; i++) {
-//     newArray.push(i);
-//   }
+const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+const autoNumbers = (i, max) => {
+  const newArray = [];
+  for (i; i < max; i++) {
+    newArray.push(i);
+  }
 
-//   return newArray;
-// };
+  return newArray;
+};
 
-// function refactorNumbersArray(arrayNumbers) {
-//   const newArray = [];
+function refactorNumbersArray(arrayNumbers) {
+  const newArray = [];
 
-//   arrayNumbers.forEach((number) => {
-//     //Inizializo la varible isPrime como true
-//     var isPrime = true;
+  arrayNumbers.forEach((number) => {
+    //Inizializo la varible isPrime como true
+    var isPrime = true;
 
-//     //Si le numero es igual o mayor a dos entro al if
-//     if (number >= 2) {
-//       //Divido cada numero, por los numeros anteriores pero no por si mismo
+    //Si le numero es igual o mayor a dos entro al if
+    if (number >= 2) {
+      //Divido cada numero, por los numeros anteriores pero no por si mismo
 
-//       let i = 2;
-//       while (i < number) {
-//         if (number % i === 0) {
-//           isPrime = false;
-//         }
-//         i++;
-//       }
-//     } else {
-//       isPrime = false;
-//     }
-//     if (isPrime) newArray.push(number);
-//   });
+      let i = 2;
+      while (i < number) {
+        if (number % i === 0) {
+          isPrime = false;
+        }
+        i++;
+      }
+    } else {
+      isPrime = false;
+    }
+    if (isPrime) newArray.push(number);
+  });
 
-//   return newArray;
-// }
+  return newArray;
+}
 
-// const del1al500 = refactorNumbersArray(autoNumbers(0, 500));
-// const del500al1000 = refactorNumbersArray(autoNumbers(501, 1000));
-// console.log(del1al500);
-// console.log(del500al1000);
+const del1al500 = refactorNumbersArray(autoNumbers(0, 500));
+const del500al1000 = refactorNumbersArray(autoNumbers(501, 1000));
+console.log(del1al500);
+console.log(del500al1000);
